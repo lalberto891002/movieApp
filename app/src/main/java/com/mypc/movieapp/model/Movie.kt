@@ -11,8 +11,8 @@ data class Movie(val id:String,
                  val rating:String,
                  val actors:String)
 
-fun getMovies():List<Movie>{
-    return listOf(
+fun getMovies():MutableList<Movie>{
+    return mutableListOf(
         Movie(id = "tt0499549",
             title ="Avatar",
             year = "2009",
@@ -128,4 +128,9 @@ fun getMovies():List<Movie>{
 
 
     )
+
+
+
 }
+
+
